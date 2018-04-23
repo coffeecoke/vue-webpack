@@ -4,12 +4,12 @@
 
 <script>
 export default {
-  data ({
-      return {
-          text: 'abc'
-      }
-  }
-  )
+    data() {
+        return {
+            text:'abc'
+        }
+    }
+
 }
 </script>
 
