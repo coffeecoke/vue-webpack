@@ -1,4 +1,7 @@
 const path = require('path')
+function assetsPath(_path) {
+    return path.join('static',_path)
+}
 
 module.exports = {
     entry: path.join(__dirname, 'src/index.js'),
@@ -13,26 +16,22 @@ module.exports = {
                 loader:'vue-loader'
             },
             {
-                text:/\.css$/,
+                test:/\.css$/,
                 use: [
                     // 从右往左执行
                     'style-loader',
                     'css-loader'
                 ]
             },
+        
             {
-                text:/\.(gif|jpg|png|svg)$/,
-                use:[
-                    // 区别上面的数组们，这里使用对象，是因为要配置options
-                    {
-                        loader: 'url-loader',//封装了file-loader
-                        options: {
-                            limit:1024
-                        }
-
-                    }
-                ]
-            }
+                test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+                loader: "url-loader",
+                options: {
+                  limit: 8192,
+                  name: assetsPath("img/[name].[hash:8].[ext]")//配置静态路径，hash值
+                }
+              }
         ]
     }
 }

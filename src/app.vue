@@ -14,6 +14,9 @@ export default {
 </script>
 
 <style>
+    body {
+        background:url('people.png')
+    }
     #text {
         color:red;
     }

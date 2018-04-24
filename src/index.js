@@ -6,3 +6,4 @@ document.body.appendChild(root)
 new Vue ({
     rendar: (h) => h(App)
 }).$mount(root)
+
