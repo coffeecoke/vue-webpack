@@ -1,4 +1,5 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 function assetsPath(_path) {
     return path.join('static',_path)
 }
@@ -26,6 +27,8 @@ module.exports = {
         
             {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+                //扩展：研究下正则的匹配规则 
+               
                 loader: "url-loader",
                 options: {
                   limit: 8192,
@@ -33,5 +36,9 @@ module.exports = {
                 }
               }
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin()
+    ]
+        
 }

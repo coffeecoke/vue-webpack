@@ -317,6 +317,8 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */] ({
     rendar: (h) => h(__WEBPACK_IMPORTED_MODULE_1__app_vue__["a" /* default */])
 }).$mount(root)
 
+
+
 /***/ }),
 /* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -8715,7 +8717,7 @@ exports = module.exports = __webpack_require__(11)(false);
 
 
 // module
-exports.push([module.i, "\nbody {\n    background:url(" + escape(__webpack_require__(12)) + ")\n}\n#text {\n    color:red;\n}\n", ""]);
+exports.push([module.i, "\nhtml,body {\n    width:100%;\n    height:100%;\n}\nbody {\n    background:url(" + escape(__webpack_require__(12)) + ")\n}\n#text {\n    color:red;\n}\n", ""]);
 
 // exports
 
@@ -8826,9 +8828,9 @@ function toComment(sourceMap) {
 
 /***/ }),
 /* 12 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "data:image/png;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJzdGF0aWMvaW1nL3Blb3BsZS4zNjkxYWJlNC5wbmciOw=="
+module.exports = __webpack_require__.p + "static/img/people.3691abe4.png";
 
 /***/ }),
 /* 13 */
