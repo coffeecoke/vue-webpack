@@ -1,0 +1,25 @@
+从新开始 继续吧嗯嗯
+说吧........完了？？哇，这说的配置环境
+widow下怎么设置set NODE_ENV=production  //set NODE_ENV = development
+mac 下：？？？不晓得
+NODE_ENV=production  // NODE_ENV = development
+
+为了不给每个环境做配置，我们使用cross-env ：为了跨平台设置环境变量 通过它我们可以只写一份代码
+webpack-dev-server v3版本 需要webpack4.以上 
+Source Map 源文件 与生成文件 之间的映射关系！方便代码调试 ok?ok
+babel知道干嘛的吗 用来编译es6
+
+babel-plugin-transform-runtime
+babel-polyfill
+stage-2 
+上面三个看下 恩德，一会睡觉吧 好吧 现在吗 完事喽 go on
+
+ loader?, options?, query? 好尴尬 ???我也不知道了
+
+ css/main-one.css  105 bytes       0  [emitted]         main
+    css/main-two.css   68 bytes       0  [emitted]         main
+       bundle.js.map     724 kB       0  [emitted]         main
+css/main-one.css.map   86 bytes       0  [emitted]         main
+css/main-two.css.map   85 bytes       0  [emitted]  
+好像是自己新建的
+是网卡，还是电脑电脑卡 我去看看我加网
